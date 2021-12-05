@@ -27,6 +27,7 @@ void enableRawMode() {
 if (tcsetattr(STDIN_FILENO, TCSAFLUSH, &raw) == -1) die("tcsetattr");}
 
 /*** init ***/
+
 int main() {
   enableRawMode();
   while (1) {
